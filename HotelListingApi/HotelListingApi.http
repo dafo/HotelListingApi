@@ -1,0 +1,35 @@
+GET {{HotelListingApi_HostAddress}}/api/hotels
+
+###
+
+POST {{HotelListingApi_HostAddress}}/api/hotels
+Content-Type: application/json
+
+{
+  {
+    "id": 1,
+    "name": "Marina Palace,
+    "address": "54 Pacific St",
+    "rating": 4.1
+  }
+}
+
+###
+
+@id=1
+DELETE {{HotelListingApi_HostAddress}}/api/hotels/{{id}}
+
+###
+
+GET {{HotelListingApi_HostAddress}}/api/hotels/{{id}}
+
+###
+
+PUT {{HotelListingApi_HostAddress}}/api/hotels/{{id}}
+Content-Type: application/json
+
+{
+  //Hotel
+}
+
+###
